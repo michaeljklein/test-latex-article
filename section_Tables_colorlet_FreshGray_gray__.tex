@@ -1,0 +1,27 @@
+\section{Tables}
+\colorlet{FreshGray}{gray!20!white}
+\colorlet{FreshGreen}{green!20!white}
+\colorlet{FreshYellow}{yellow!20!white}
+\colorlet{FreshRed}{red!20!white}
+\def\okcell{\cellcolor{FreshGreen}}
+\def\avgcell{\cellcolor{FreshYellow}}
+\def\badcell{\cellcolor{FreshRed}}
+\def\nocell{\cellcolor{FreshGray}}
+
+\begin{table}[h!]
+\newcolumntype{g}{>{\columncolor{FreshGray}}c}
+\begin{tabular}{ |g|c|c|c|c|  }
+\hline
+\multicolumn{5}{|c|}{Comparison of Sorting Algorithms} \\
+\hline \rowcolor{FreshGreen} 
+  \onlyHTML{\multirow{2}{*}{\okcell Name}}& \multicolumn{3}{|c|}{Performance} & \onlyHTML{\multirow{2}{*}{\okcell Memory}} \\ \cline{2-4}
+  \onlyPDF{\multirow{-2}{*}{\okcell Name}} & Best & Average & Worst &  \onlyPDF{\multirow{-2}{*}{\okcell Memory}} \\
+\hline
+Quicksort & \okcell $n \log(n)$ & \okcell $n \log(n)$ & \badcell $n^2$ & \avgcell $\log n$ \\
+Merge Sort & \okcell $n \log(n)$ & \okcell $n \log(n)$ & \okcell $n \log(n)$ & \badcell $n$ worst case\\
+In-place merge Sort & \nocell -- & \nocell -- & \avgcell $n \log^2(n)$ & \okcell 1 \\
+\hline
+\end{tabular}
+\caption{\label{table:example} An advanced table}}
+\end{table}
+Source for the tabular data: \url{http://en.wikipedia.org/wiki/Sorting_algorithm}

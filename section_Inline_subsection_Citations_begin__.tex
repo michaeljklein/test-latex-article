@@ -1,0 +1,97 @@
+\section{Inline}
+\subsection{Citations}
+\begin{itemize} 
+\item cite: \cite{2016}, multiple: \cite{2016,Einstein_1922}
+\item citet: \citet{2016}, multiple: \citet{2016,Einstein_1922},
+\item citep: \citep{2016}, multiple: \citep{2016,Einstein_1922}, 
+\item with page numbers \cite[pp.~2]{2016}, \cite[pp.~12-22]{Einstein_1922}
+\end{itemize}
+
+\subsection{Labels and references}\label{sec:labels}
+Examples of references: 
+\begin{itemize}
+\item Subsection~\ref{sec:labels},
+\item Figure~\ref{fig:example},
+\item Equation~\ref{eq:lorenz}, and eq.~\ref{eq:coins}
+\item Table~\ref{table:example}
+\end{itemize}
+
+\subsection{Block quotes}
+\subsubsection{{\LaTeX} \{quote\}}
+\begin{quote}
+I do not like them in a box.
+I do not like them with a fox.
+I do not like them in a house.
+I do not like them with a mouse.
+I do not like them here or there.
+I do not like them anywhere.
+I do not like green eggs and ham.
+I do not like them, Sam-I-am.
+\end{quote}
+
+\subsubsection{{\LaTeX} \{verbatim\}}
+\begin{verbatim}
+I do not like them in a box.
+I do not like them with a fox.
+I do not like them in a house.
+I do not like them with a mouse.
+I do not like them here or there.
+I do not like them anywhere.
+I do not like green eggs and ham.
+I do not like them, Sam-I-am.
+\end{verbatim}
+
+\subsubsection{{\LaTeX} \{lstlisting\}}
+\begin{lstlisting}
+I do not like them in a box.
+I do not like them with a fox.
+I do not like them in a house.
+I do not like them with a mouse.
+I do not like them here or there.
+I do not like them anywhere.
+I do not like green eggs and ham.
+I do not like them, Sam-I-am.
+\end{lstlisting}
+
+\subsection{Footnotes}
+Example of a footnote\footnote{this one but also\footnote{a nested note}} and one more\footnote{that one}.
+
+\subsection{Sub/superscripts}
+In text we have textsuperscript\textsuperscript{sup} and textsubscript\textsubscript{sub}.
+
+In math we have the hat $x^2$ and the underscore $x_2$.
+
+\subsection{Math equations}
+The Lorenz Equations (numbered, labeled as eq:lorenz and eq:coins):
+\begin{eqnarray}\label{eq:lorenz}
+\dot{x} & =\sigma(y-x)\nonumber  \\ 
+\dot{y} & =\rho x-y-xz\nonumber  \\ 
+\dot{z} & =-\beta z+xy\nonumber \\
+\end{eqnarray}
+
+The probability of getting \(k\) heads when flipping \(n\) coins is:
+\begin{equation}\label{eq:coins}
+P(E) = {n \choose k} p^k (1-p)^{ n-k}
+\end{equation}
+
+
+\subsubsection{Inline and display style}
+
+We can say inline that for any $x \in \mathcal{N}$ we know that display style (unnumbered):
+$$ x \geq 0 $$
+
+\subsection{Code listings}
+\begin{lstlisting}
+\documentclass{article}
+% document preamble
+\begin{document}
+% document body
+Hello World!
+\end{document}
+\end{lstlisting}
+
+\subsection{Links}
+\begin{itemize}
+\item A simple \verb|\url|: \url{https://www.authorea.com}
+\item An abbreviated \verb|\href|: \href{https://www.authorea.com}{Authorea homepage}
+\end{itemize}

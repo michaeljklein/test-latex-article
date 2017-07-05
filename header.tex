@@ -1,0 +1,25 @@
+\usepackage{multirow}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage{pifont}
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color
+  basicstyle=\footnotesize,        % size of fonts used for the code
+  breaklines=true,                 % automatic line breaking only at whitespace
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{OliveGreen},    % comment style
+  keywordstyle=\color{BlueViolet},       % keyword style
+  stringstyle=\color{black},     % string literal style
+  language=[AlLaTeX]TeX,             % Set your language (you can change the language for each code-block optionally)
+  frame=lrtb, %
+  xleftmargin=\fboxsep, %
+  xrightmargin=-\fboxsep, %
+  moretexcs={not,like},
+}
+
+\def\onlyHTML#1{\iflatexml #1\fi}
+\def\onlyPDF#1{\iflatexml\else #1\fi}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proof}{Proof}
+\newtheorem{lemma}{Lemma}

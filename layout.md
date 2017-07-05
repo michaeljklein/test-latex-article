@@ -1,0 +1,13 @@
+abstract.tex
+chapter_LaTeX_Text_section_Text__.tex
+section_Inline_subsection_Citations_begin__.tex
+chapter_Chapter_Structural_section_Section__.tex
+figures/1533513_10202702496355000_90486170_n/1533513_10202702496355000_90486170_n.png
+section_Tables_colorlet_FreshGray_gray__.tex
+figures/interactive-figure-1470762309781/figure.html
+166ee.tex
+12ac4.html
+1187.tex
+e414.html
+figures/academics_are1/academics_are1.png
+61bf.html
